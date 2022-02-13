@@ -16,7 +16,7 @@ export const ExampleTabs = () => {
 		Commands: [
 			{
 				id: 1,
-				key: 1;
+				key: 1,
 				title:
 					<Card bordered>
 						<Text>
@@ -32,7 +32,7 @@ export const ExampleTabs = () => {
 			},
 			{
 				id: 2,
-				key: 2;
+				key: 2,
 				title:
 					<Card bordered>
 						<Text>
@@ -49,7 +49,7 @@ export const ExampleTabs = () => {
 		Modules: [
 			{
 				id: 3,
-				key: 3;
+				key: 3,
 				title:
 					<Card bordered>
 						<Text>
