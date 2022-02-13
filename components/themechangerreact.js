@@ -1,0 +1,1 @@
+export { ThemeChanger as default } from "./themes-changer.js";

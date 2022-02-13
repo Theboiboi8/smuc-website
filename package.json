@@ -1,0 +1,41 @@
+{
+  "name": "tailwindcss-and-next-ui",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@headlessui/react": "^1.4.3",
+    "@mdx-js/loader": "^2.0.0",
+    "@mdx-js/react": "^2.0.0",
+    "@mui/material": "^5.4.1",
+    "@nextui-org/react": "^1.0.2-alpha.2",
+    "@tailwindcss/typography": "^0.5.0",
+    "next": "^12.0.10",
+    "next-themes": "0.0.15",
+    "node-fetch": "^3.2.0",
+    "react": "^18.0.0-rc.0",
+    "react-dom": "^18.0.0-rc.0",
+    "react-loader-spinner": "^5.1.2",
+    "typewriter-effect": "^2.18.2",
+    "use-dark-mode": "^2.3.1",
+    "webpack": "^5.68.0"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.139",
+    "autoprefixer": "^10.4.2",
+    "eslint": "8.7.0",
+    "eslint-config-next": "12.0.8",
+    "postcss": "^8.4.5",
+    "prettier": "2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.7",
+    "tailwindcss": "^3.0.15"
+  }
+}
