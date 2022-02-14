@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import { Tab } from '@headlessui/react'
-import {Card, Code, Collapse, Input, Spacer, Text, Progress, Loading} from '@nextui-org/react'
+import {Card, Code, Text} from '@nextui-org/react'
 import styles from '../styles/Home.module.css'
-import { TypeFace } from './team-sigma-typeface'
-import { Example } from './dropdown-test'
 import {SnowflakeIcon} from "./snowflake";
 import {Unknown} from "./unknown";
 
@@ -68,22 +66,20 @@ export const ExampleTabs = () => {
 			<Tab.Group>
 				<Tab.List className="flex p-1 space-x-1 bg-blue-900/20 rounded-xl">
 					{Object.keys(categories).map((category) => (
-						<React.Suspense fallback={<Loading type='points-opacity' />}>
-							<Tab
-								key={category}
-								className={({ selected }) =>
-									classNames(
-										'w-full py-2.5 text-sm leading-5 font-medium text-stone-700 rounded-lg',
-										'focus:outline-none ',
-										selected
-											? 'bg-gray-400 shadow'
-											: 'text-gray-400 hover:bg-white/[0.5] hover:text-white'
-									)
-								}
-							>
-								{category}
-							</Tab>
-						</React.Suspense>
+						<Tab
+							key={category}
+							className={({ selected }) =>
+								classNames(
+									'w-full py-2.5 text-sm leading-5 font-medium text-stone-700 rounded-lg',
+									'focus:outline-none ',
+									selected
+										? 'bg-gray-400 shadow'
+										: 'text-gray-400 hover:bg-white/[0.5] hover:text-white'
+								)
+						}
+						>
+							{category}
+						</Tab>
 					))}
 				</Tab.List>
 				<Tab.Panels className="mt-2">
